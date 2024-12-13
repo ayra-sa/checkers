@@ -277,6 +277,7 @@ header nav .nav-menu li:nth-child(5) {
 .desc-wrap h2 span {
   font-weight: 400;
   font-family: "Poiret One", sans-serif;
+  display: block;
 }
 .desc-percent {
   font-weight: 500;
@@ -451,7 +452,7 @@ header nav .nav-menu li:nth-child(5) {
 }
 .footer-logo {
   background-color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.15rem 1rem;
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
@@ -461,7 +462,7 @@ header nav .nav-menu li:nth-child(5) {
   gap: 12px;
   margin-bottom: 2rem;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .footer-logo img {
   width: 3rem;
@@ -533,6 +534,7 @@ header nav .nav-menu li:nth-child(5) {
     flex-direction: row;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+    padding: 2rem;
   }
   .hero-content-left {
     width: 50%;
@@ -555,6 +557,10 @@ header nav .nav-menu li:nth-child(5) {
   .desc-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .desc-wrap h2 {
+    font-size: 6rem;
+    line-height: 6rem;
   }
   .detail-wrap {
     display: grid;
@@ -597,6 +603,11 @@ header nav .nav-menu li:nth-child(5) {
   .about-wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .about-wrap h3 {
+    font-size: 2.65rem;
+    font-weight: 500;
   }
   .footer {
     padding-top: 0;
@@ -609,7 +620,7 @@ header nav .nav-menu li:nth-child(5) {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer-left {
-    padding: 2rem 0;
+    padding: 5rem 0;
   }
   .footer-right video {
     position: absolute;

@@ -193,6 +193,7 @@ header {
             span {
                 font-weight: 400;
                 font-family: "Poiret One", sans-serif;
+                display: block;
             }
         }
     }
@@ -406,7 +407,7 @@ header {
 
     &-logo {
         background-color: white;
-        padding: 0.5rem 1rem;
+        padding: 0.15rem 1rem;
         width: fit-content;
         margin-inline: auto;
         border-radius: 100px;
@@ -415,7 +416,7 @@ header {
         gap: 12px;
         margin-bottom: 2rem;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
 
         img {
             width: 3rem;
@@ -495,6 +496,7 @@ header {
         &-wrap {
             flex-direction: row;
             column-gap: 2rem;
+            padding: 2rem;
         }
 
         &-content-left {
@@ -528,6 +530,11 @@ header {
         &-wrap {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+
+            h2 {
+                font-size: 6rem;
+                line-height: 6rem;
+            }
         }
     }
 
@@ -586,6 +593,12 @@ header {
         &-wrap {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+
+            h3 {
+                font-size: 2.65rem;
+                font-weight: 500;
+            }
         }
     }
 
@@ -599,7 +612,7 @@ header {
         }
 
         &-left {
-            padding: 2rem 0;
+            padding: 5rem 0;
         }
 
         &-right {
