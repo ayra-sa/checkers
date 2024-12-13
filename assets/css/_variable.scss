@@ -1,0 +1,15 @@
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  "2xl": 1536px
+);
+
+$container-max-widths: (
+  sm: 100%,    // Full width for small screens
+  md: 640px,   // Medium screens
+  lg: 768px,   // Large screens
+  xl: 1024px,  // Extra large screens
+  "2xl": 1280px // 2XL screens
+);
