@@ -61,6 +61,7 @@ data.forEach((item,id) => {
   Object.entries(item.links).forEach(([platform, url]) => {
     const link = document.createElement("a");
     link.href = url || "#";
+    link.target = "_blank"
     link.textContent = platform;
     catalogLinks.appendChild(link);
   });
