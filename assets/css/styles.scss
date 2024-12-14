@@ -491,6 +491,98 @@ header {
     }
 }
 
+// CATALOG
+.catalog {
+    padding-bottom: 4rem;
+    &-title {
+        display: flex;
+        // align-items: center;
+        flex-direction: column;
+        column-gap: 2rem;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        img {
+            width: 6rem;
+            height: 3rem;
+        }
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        gap: 2rem;
+    }
+
+    &-card {
+        img {
+            margin-bottom: 1rem;
+            width: auto;
+        }
+
+        .card-content {
+            width: 100%;
+
+            .card-title {
+                display: block;
+                border-bottom: 1px solid black;
+            }
+
+            .card-desc {
+                border-bottom: 1px solid black;
+            }
+
+            ul {
+                list-style: inside;
+
+                li {
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+
+        .catalog-divo {
+            span {
+                font-size: 0.8rem;
+            }
+        }
+
+        .catalog-link {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: #a9b1df;
+            text-decoration: underline;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+// CATALOG
+
+@include mixins.respond(md) {
+    .catalog {
+        &-title {
+            flex-direction: row;
+        }
+
+        &-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-card {
+            .catalog-link {
+                font-size: .9rem;
+                text-align: left;
+            }
+        }
+    }
+}
+
 @include mixins.respond(lg) {
     .hero {
         &-wrap {
@@ -581,7 +673,7 @@ header {
                 width: auto;
 
                 img {
-                    margin-top: .7rem;
+                    margin-top: 0.7rem;
                     width: 100%;
                     height: 150px;
                 }
@@ -661,6 +753,12 @@ header {
                     height: 130px;
                 }
             }
+        }
+    }
+
+    .catalog {
+        &-list {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }

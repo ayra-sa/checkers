@@ -529,6 +529,74 @@ header nav .nav-menu li:nth-child(5) {
   width: fit-content;
 }
 
+.catalog {
+  padding-bottom: 4rem;
+}
+.catalog-title {
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.catalog-title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.catalog-title img {
+  width: 6rem;
+  height: 3rem;
+}
+.catalog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+.catalog-card img {
+  margin-bottom: 1rem;
+  width: auto;
+}
+.catalog-card .card-content {
+  width: 100%;
+}
+.catalog-card .card-content .card-title {
+  display: block;
+  border-bottom: 1px solid black;
+}
+.catalog-card .card-content .card-desc {
+  border-bottom: 1px solid black;
+}
+.catalog-card .card-content ul {
+  list-style: inside;
+}
+.catalog-card .card-content ul li {
+  border-bottom: 1px solid black;
+}
+.catalog-card .catalog-divo span {
+  font-size: 0.8rem;
+}
+.catalog-card .catalog-link {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #a9b1df;
+  text-decoration: underline;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .catalog-title {
+    flex-direction: row;
+  }
+  .catalog-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .catalog-card .catalog-link {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}
 @media (min-width: 1024px) {
   .hero-wrap {
     flex-direction: row;
@@ -654,5 +722,8 @@ header nav .nav-menu li:nth-child(5) {
   .promo-others .promo-voucher-img img {
     width: 100%;
     height: 130px;
+  }
+  .catalog-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=styles.css.map */
